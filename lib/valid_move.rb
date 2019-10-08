@@ -1,4 +1,5 @@
 # code your #valid_move? method here
+require_relative "../lib/valid_move.rb"
 def valid_move? (board, position)
   if position.to_i.between?(0,8)
     if !position_taken?(board, position.to_i)
